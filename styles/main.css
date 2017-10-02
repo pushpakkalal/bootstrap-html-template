@@ -1,0 +1,296 @@
+
+@import url('fonts.css');
+
+/* ==================================================
+   Basic Styles
+================================================== */
+
+html, body {
+	height: 100%;
+}
+
+html, hmtl a{
+	width:100%;
+	font-size: 100%; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	color:#75726f;
+	font-size:13px;
+	font-family: 'Roboto', sans-serif, Arial, Helvetica;
+	line-height:18px;
+}
+
+a{
+	color:#6c509a;
+	text-decoration: none;
+	cursor: pointer;
+	
+	-webkit-transition: all 0.2s linear 0s;	
+	   -moz-transition: all 0.2s linear 0s;
+		 -o-transition: all 0.2s linear 0s;
+		    transition: all 0.2s linear 0s;
+}
+
+a:hover,
+a:active,
+a:focus{
+	outline: 0;
+	color:#3c3d40;
+	text-decoration:none;
+}
+
+a img {
+	border: none;
+}
+
+a > img {
+	vertical-align: bottom;	
+}
+
+img {
+	max-width: 100%;
+	height:auto;	
+}
+
+strong {
+  	font-weight: normal;
+	font-family: 'Roboto', sans-serif, Arial, Helvetica;
+}
+
+ul, p {
+	margin:0px;
+	padding:0px;
+}
+
+p {
+	margin:0px 0px 20px 0px;
+}
+
+p.marginZero {
+	margin:0px 0px 0px 0px;
+}
+
+hr {
+	border-style: solid;
+	border-color: #eeeeee;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	margin: 20px 0;	
+}
+
+.align_left{
+	float:left;
+}
+
+.align_right{
+	float:right;
+}
+
+.text_align_left {
+	text-align: left;
+}
+
+.text_align_center {
+	text-align: center;
+}
+
+.text_align_right {
+	text-align: right;	
+}
+
+.color-text {
+    color: #DE5E60;
+}
+
+.through{
+	text-decoration:line-through;
+}
+
+.border-radius{
+	-moz-border-radius:6px 6px 6px 6px;
+	-webkit-border-radius:6px 6px 6px 6px;
+	border-radius:6px 6px 6px 6px;
+	behavior: url(PIE.htc); /* For IE8 */
+}
+
+input, button, select, textarea {
+	background-color:#FFFFFF;
+	border:solid 1px #D5D5D5;
+	font-weight: 300;
+	outline: 0;
+	font-family: 'Roboto', sans-serif, Arial, Helvetica;
+	-webkit-transition: all 0.2s ease-out 0s;	
+	   -moz-transition: all 0.2s ease-out 0s;
+		 -o-transition: all 0.2s ease-out 0s;
+		    transition: all 0.2s ease-out 0s;
+}
+
+input[type="button"], input[type="submit"]{
+	cursor:pointer;
+}
+
+input:focus, 
+textarea:focus,
+input[type="text"]:focus {
+	outline: 0;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #7F8289;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #7F8289;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #7F8289;
+}
+
+/* ==================================================
+   Code and Pre
+================================================== */
+
+code,
+pre {
+  	padding: 0 3px 2px;
+  	-webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+  	color: #232527;
+  	font-size: 12px;
+  	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+code {
+  	padding: 2px 4px;
+  	border: 1px solid #dde4e9;
+  	background-color: #F6F6F6;
+  	color: #232527;
+  	white-space: nowrap;
+}
+
+pre {
+  	display: block;
+  	margin: 70px 50px;
+  	padding: 30px;
+  	border: 1px solid #dde4e9;
+  	-webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+  	background-color: #FCFCFC;
+  	white-space: pre;
+  	white-space: pre-wrap;
+  	word-wrap: break-word;
+  	word-break: break-all;
+  	font-size: 12px;
+  	line-height: 20px;
+}
+
+pre code {
+  	padding: 0;
+  	border: 0;
+  	background-color: transparent;
+  	color: inherit;
+  	white-space: pre;
+  	white-space: pre-wrap;
+}
+
+.pre-scrollable {
+  	overflow-y: scroll;
+  	max-height: 340px;
+}
+
+* {
+    box-sizing: border-box;
+}
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ==================================================
+   Typography
+================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Roboto', sans-serif;
+	padding:0px;
+	margin:0px;
+	color:#3f3f3f;
+	font-weight:normal;
+	line-height:60px;
+}
+
+h1{
+	font-size:48px;
+}
+
+h2{
+	font-size:36px;
+}
+
+h3{
+	font-size:24px;
+}
+
+h4{
+	font-size:20px;
+}
+
+h5{
+	font-size:18px;
+}
+
+h6{
+	font-size:16px;
+}
+
+
+/* ==================================================
+   Main Container
+================================================== */
+
+.mainDiv{float:left;width:100%;}
+.container{position:relative; width:1100px; max-width: 100%; margin:auto;}
+.margintop10{margin-top:10px;}
+.margintop20{margin-top:20px;}
+.margintop30{margin-top:30px;}
+.marginbottom10{margin-top:10px;}
+.marginbottom20{margin-top:20px;}
+.marginbottom30{margin-top:30px;}
+
+
+/* ==================================================
+   Header
+================================================== */
+header { width:100%; float:left;  position:relative; z-index:99; box-shadow:0px 3px 3px 0px rgba(0,0,0,0.3); }
+.navbar { width: 100%; float: left; margin: 0; padding: 0; background-color: #444444; }
+.navbar .navbar-header a, .navbar .navbar-header a:hover { color: #ffffff;  }
+.navbar .nav li a { font-size: 13px; color: #f1f1f1; text-align: left; }
+.navbar .nav li a:hover { color: #09a4f5; }
+.navbar .nav ul { border-radius: 0; padding: 0; } 
+.navbar .nav ul li { width: 100%; float: left; margin: 0; padding: 0; border-bottom: 1px solid #f1f1f1;   }
+.navbar .nav ul li:last-child { border-bottom: 0; }
+.navbar .nav ul li a { font-size: 13px; color: #333333; text-align: left; margin: 0; padding: 10px; }
+.navbar .nav ul li a:hover { color: #333333; }
+/* ==================================================
+   footer
+================================================== */
+
+/* ==================================================
+   Middle Content
+================================================== */
